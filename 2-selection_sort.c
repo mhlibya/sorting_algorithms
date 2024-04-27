@@ -10,6 +10,10 @@ void selection_sort(int *array, size_t size)
 size_t i, j, k;
 int temp;
 
+if (!array || !size)
+{
+return;
+}
 for (i = 0; i < size - 1; i++)
 {
 for (j = i + 1, k = size - 1; k > i; k--)
